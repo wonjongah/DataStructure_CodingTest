@@ -1,2 +1,0 @@
-﻿num = input("")
-print(num)
