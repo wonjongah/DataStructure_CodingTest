@@ -308,3 +308,31 @@ print(int(not num))
 a, b = map(int, input().split())
 print(int(a and b))
 # 물론 if문도 가능
+
+# 1055 하나라도 참이면 참 출력하기
+
+a, b = map(int, input().split())
+print(int(a or b))
+# 물론 if문도 가능
+
+# 1056 참 거짓이 서로 다를 때에만 참 출력하기(XOR)
+
+a, b = map(int, input().split())
+print(int((a and not b) or (not a and b)))
+# 둘 중 하나를 일부러 역을 시켜서 다를 경우 찾기
+# 둘이 1, 0 혹은 0, 1이 입력됐을 때만 참
+
+# 1057 참 거짓이 서로 같을 때에만 참 출력하기
+
+a, b = map(int, input().split())
+print(int((not a and not b) or (a and b)))
+# 둘 중 하나를 일부러 역을 시켜서 같을 경우 찾기
+# 둘이 1, 1 혹은 0, 0이 입력됐을 때만 참
+
+# 1058 둘 다 거짓일 경우만 참 출력하기
+
+a, b = map(int, input().split())
+print(int(not a and not b))
+# print(int(not (a or b)))도 가능
+# 둘 다 역으로 바꾸어 0, 0일 경우 찾기
+
