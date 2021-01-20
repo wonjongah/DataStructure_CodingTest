@@ -336,3 +336,49 @@ print(int(not a and not b))
 # print(int(not (a or b)))도 가능
 # 둘 다 역으로 바꾸어 0, 0일 경우 찾기
 
+# 1059 비트단위로 not하여 출력하기(~ 사용)
+
+num = ~int(input())
+print(num)
+
+# 1060 비트단위로 and하여 출력하기(& 사용)
+
+a, b = map(int, input().split())
+print(a & b)
+
+# 1061 비트단위로 or하여 출력하기(| 사용)
+
+a, b = map(int, input().split())
+print(a | b)
+
+# 1062 비트단위로 xor하여 출력하기(^ 사용)
+
+a, b = map(int, input().split())
+print(a ^ b)
+
+# 1063 두 정수 입력받아 큰 수 출력하기(삼항연산)
+
+a, b = map(int, input().split())
+print(a  if a > b else b) 
+# print(max(a, b))도 가능
+
+# 1064 정수 3개 입력받아 가장 작은 수 출력하기(삼항연산)
+
+a, b, c = map(int, input().split())
+print(min(a, b, c))
+# 삼항연산보다 min 함수를 쓰는 게 더 간략하다.
+
+# 1065 정수 3개 입력받아 짝수만 출력하기
+
+a, b, c = map(int, input().split())
+if(a % 2 == 0):
+    print(a)
+if(b % 2 == 0):
+    print(b)
+if(c % 2 == 0):
+    print(c)
+
+# a = map(int, input().split())
+# for i in a:
+#     if(i % 2 == 0):
+#         print(i)
