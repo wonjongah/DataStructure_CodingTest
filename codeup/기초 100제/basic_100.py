@@ -382,3 +382,53 @@ if(c % 2 == 0):
 # for i in a:
 #     if(i % 2 == 0):
 #         print(i)
+
+# 1066 정수 3개 입력받아 짝/홀 출력하기
+
+a, b, c = map(int, input().split())
+
+if x % 2 == 0:
+    print("even")
+else:
+    print("odd")
+if y % 2 == 0:
+    print("even")
+else:
+    print("odd")
+if z % 2 == 0:
+    print("even")
+else:
+    print("odd")
+
+# nums = map(int, input().split())
+# for i in nums:
+#     if i % 2 == 0:
+#         print("even")
+#     else:
+#         print("odd")
+
+# 1067 [선택실행구조] 정수 1개 입력받아 분석하기
+
+num = int(input())
+if num > 0:
+    print("plus")
+    if num % 2 == 0:
+        print("even")
+    else:
+        print("odd")
+else:
+    print("minus")
+    if num % 2 == 0:
+        print("even")
+    else:
+        print("odd")
+
+# num = int(input())
+# if num > 0:
+#     print("plus")
+# elif num < 0:
+#     print("minus")
+# if num % 2 == 0:
+#     print("even")
+# else:
+#     print("odd")
