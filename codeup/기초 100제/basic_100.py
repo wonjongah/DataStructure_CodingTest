@@ -432,3 +432,48 @@ else:
 #     print("even")
 # else:
 #     print("odd")
+
+# 1068 정수 1개 입력받아 평가 출력하기
+
+score = int(input())
+
+if score <= 100 and score >= 90:
+    print("A")
+elif score >= 70:
+    print("B")
+elif score >= 40:
+    print("C")
+else:
+    print("D")
+
+# 1069 평가 입력받아 다르게 출력하기
+
+alpha = input()
+
+if alpha == "A":
+    print("best!!!")
+elif alpha == "B":
+    print("good!!")
+elif alpha == "C":
+    print("run!")
+elif alpha == "D":
+    print("slowly~")
+else:
+    print("what?")
+
+# 1070 월 입력받아 계절 출력하기
+
+month = int(input())
+
+if month in [12, 1, 2]:
+    print("winter")
+elif month in [3, 4, 5]:
+    print("spring")
+elif month in [6, 7, 8]:
+    print("summer")
+elif month in [9, 10, 11]:
+    print("fall")
+
+# if-elif과 or을 사용해 해결도 가능
+
+# 1071
