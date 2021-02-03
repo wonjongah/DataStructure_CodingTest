@@ -476,4 +476,61 @@ elif month in [9, 10, 11]:
 
 # if-elif과 or을 사용해 해결도 가능
 
-# 1071
+# 1071 0 입력될 때까지 무한 출력하기 1
+
+nums = map(int, input().split())
+
+for i in nums:
+    if not i == 0:
+        print(i)
+    else:
+        break
+
+# 1072 정수 입력받아 계속 출력하기
+
+count = int(input())
+nums = input().split()
+
+for i in nums:
+    print(i)
+
+# 1073 0 입력될 때까지 무한 출력하기 2
+
+nums = list(map(int, input().split()))
+count = 0
+while(nums[count] != 0):
+    print(nums[count])
+    count += 1
+
+# int() 함수를 쓰지 않고 문자열 비교로 == "0"으로 해도 무방
+# for문 써도 무방
+# nums = map(int, input().split())
+# for i in nums:
+#     if not i == 0:
+#         print(i)
+#     else:
+#         break
+
+# 1074 정수 1개 입력받아 카운트다운 출력하기1
+
+count = int(input())
+while(count != 0):
+    print(count)
+    count -= 1
+
+# for문도 가능
+
+# 1075 정수 1개 입력받아 카운트다운 출력하기2
+
+count = int(input())
+while(count > 0):
+    count -= 1
+    print(count)
+
+# 1076
+
+# 1077 정수 1개 입력받아 그 수까지 출력하기
+
+count = int(input())
+for i in range(count + 1):
+    print(i)
