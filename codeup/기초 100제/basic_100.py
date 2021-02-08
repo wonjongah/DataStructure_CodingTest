@@ -527,10 +527,61 @@ while(count > 0):
     count -= 1
     print(count)
 
-# 1076
+# 1076 문자 1개 입력받아 알파벳 출력하기
+
+alpha = input()
+for i in range(ord("a"), ord(alpha) + 1):
+    print(chr(i), end=" ")
 
 # 1077 정수 1개 입력받아 그 수까지 출력하기
 
 count = int(input())
 for i in range(count + 1):
     print(i)
+
+# 1078 짝수 합 구하기
+
+num = int(input())
+sum = 0
+for i in range(0, num + 1, 2):
+    sum += i
+print(sum)
+
+# 1079 원하는 문자가 입력될 때까지 반복 출력하기
+
+a = input().split()
+for i in a:
+    print(i)
+    if i == "q":
+        break
+
+# 1080 언제까지 더해야 할까?
+
+num = int(input())
+sum = 0
+for i in range(0, num):
+    sum += i
+    if sum >= num:
+        print(i)
+        break
+
+# 1081 주사위 2개를 던지면?
+
+a, b = input().split()
+for i in range(1, int(a) + 1):
+    for j in range(1, int(b) + 1):
+        print(i, j)
+
+# 1082
+
+
+# 1083 3 6 9 게임의 왕이 되자!
+
+num = int(input())
+
+for i in range(1, num + 1):
+    if i % 3 == 0:
+        print("X", end=" ")
+    else:
+        print(i, end=" ")
+
