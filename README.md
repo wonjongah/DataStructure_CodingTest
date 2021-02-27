@@ -12,3 +12,10 @@
 - beakjoon -> 백준
 - programmers -> 프로그래머스
 - codeup -> 코드업
+
+
+
+#### 2021-02-27
+
+- fastcampus -> 패스트 캠퍼스 알고리즘 / 기술면접
+
