@@ -25,7 +25,11 @@
 # for i in range(ord("a"), ord("alpha") + 1):
 #     print(chr(i), end=" ")
 
-a, b = input().split()
-for i in range(1, int(a) + 1):
-    for j in range(1, int(b) + 1):
-        print(i, j)
+# a, b = input().split()
+# for i in range(1, int(a) + 1):
+#    for j in range(1, int(b) + 1):
+#        print(i, j)
+
+w, h, b = map(int, input().split())
+result = w * h * b / 8 / 1024 /1024
+print(f"{result:.2f} MB")

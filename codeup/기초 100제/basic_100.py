@@ -585,3 +585,70 @@ for i in range(1, num + 1):
     else:
         print(i, end=" ")
 
+# 1088 3의 배수는 통과?
+
+num = int(input())
+
+for i in range(1, num + 1):
+    if i % 3 == 0:
+        continue
+    else:
+        print(i, end = " ")
+
+# 1084 빛 섞어 색 만들기
+
+red, green, blue = map(int, input().split())
+
+count = 0
+
+for r in range(red):
+    for g in range(green):
+        for b in range(blue):
+            print(r, g, b)
+            count += 1
+
+print(count)
+# print(red * green * blue)
+
+# 1085 소리 파일 저장용량 계산하기
+
+h, b, c, s = map(int, input().split())
+result = h * b * c * s / 8 / 1024 / 1024
+print(round(result, 1), "MB")
+
+# 1086 그림 파일 저장용량 계산하기
+
+w, h, b = map(int, input().split())
+result = w * h * b / 8 / 1024 /1024
+print(f"{result:.2f} MB")
+# codeup 페이지는 f 포맷이 지원되지 않는 모양, 밑도 가능
+# w, h, b = map(int, input().split())
+# result = w * h * b / 8 / 1024 /1024
+# print("{0:.2f} MB".format(result))
+
+# 1087 여기까지! 이제 그만~
+
+num = int(input())
+
+sum = 0
+count = 1
+while True:
+    sum += count
+    count += 1
+    if sum >= num:
+        break
+print(sum)
+
+# 1089 수 나열하기 1
+
+a, d, n = map(int, input().split())
+for i in range(n - 1):
+    a += d
+print(a)
+
+# 1090 수 나열하기 2
+
+a, d, n = map(int, input().split())
+for i in range(n - 1):
+    a *= d
+print(a)
