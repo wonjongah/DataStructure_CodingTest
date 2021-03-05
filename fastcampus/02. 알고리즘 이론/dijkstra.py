@@ -1,40 +1,3 @@
-#### 1. 다익스트라 알고리즘 파이썬 구현 (우선순위 큐 활용까지 포함)
-
-
-
-##### 참고 : heapq 라이브러리 활용을 통해 우선순위 큐 사용하기
-
-- 데이터가 리스트 형태일 경우, 0번 인덱스를 우선순위로 인지, 우선순위가 낮은 경우 순서대로 pop 가능
-
-```python
-import heapq
-
-queue = []
-
-heapq.heappush(queue, [2, 'A'])
-heapq.heappush(queue, [5, 'B'])
-heapq.heappush(queue, [1, 'C'])
-heapq.heappush(queue, [7, 'D'])
-
-# 맨 앞에 있는 요소가 제일 작은 요소가 되었다.
-print(queue)
-
-for index in range(len(queue)):
-    print(heapq.heappop(queue))
-    # 거리가 작은 순으로 뽑아낸다.
-```
-
-```
-[[1, 'C'], [5, 'B'], [2, 'A'], [7, 'D']]
-[1, 'C']
-[2, 'A']
-[5, 'B']
-[7, 'D']
-```
-
-![dijkstra](https://user-images.githubusercontent.com/50413112/109991844-09c8ae80-7d4e-11eb-81db-f3c4a281ee01.png)
-
-```python
 import heapq
 
 def dijkstra(graph, start):
@@ -76,9 +39,3 @@ mygraph = {
 }
 
 print(dijkstra(mygraph, 'A'))
-```
-
-```
-{'A': 0, 'B': 6, 'C': 1, 'D': 2, 'E': 5, 'F': 6}
-```
-
