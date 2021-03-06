@@ -11,4 +11,4 @@ def readNumber(n):
     i += 1
   return ''.join(result[::-1])
 
-print(readNumber(15493))
+print(readNumber(15093))
