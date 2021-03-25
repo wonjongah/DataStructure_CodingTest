@@ -572,8 +572,13 @@ for i in range(1, int(a) + 1):
     for j in range(1, int(b) + 1):
         print(i, j)
 
-# 1082
+# 1082 16진수 구구단?
 
+a = input()
+a = int(a, 16)
+
+for i in range(1, 16):
+    print("{0:X}*{1:X}={2:X}".format(a, i, a * i))
 
 # 1083 3 6 9 게임의 왕이 되자!
 
@@ -652,3 +657,30 @@ a, d, n = map(int, input().split())
 for i in range(n - 1):
     a *= d
 print(a)
+
+# 1091 수 나열하기 3
+
+a, m, d, n = map(int, input().split())
+temp = a
+for i in range(n - 1):
+    temp = temp * m + d
+print(temp)
+
+# 1092 함께 문제 푸는 날
+
+a, b, c = map(int, input().split())
+
+
+# 1093 이상한 출석번호 부르기 1
+
+# 1094 이상한 출석번호 부르기  2
+
+# 1095 이상한 출석번호 부르기  3
+
+# 1096 바둑판에 흰 돌 놓기
+
+# 1097 바둑알 십자 뒤집기
+
+# 1098 설탕과자 뽑기
+
+# 1099 성실한 개미
