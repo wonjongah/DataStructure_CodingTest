@@ -22,9 +22,44 @@ class NodeMgmt:
             print(node.data)
             node = node.next
 
+    def delete(self, data):
+        if self.head == '':
+            print("해당 값을 가진 노드가 없습니다.")
+            return
+        
+        if self.head.data == data:
+            temp = self.head
+            self.head = self.head.next
+            del temp
+        else:
+            node = self.head
+            while node.next:
+                if node.next.data == data:
+                    temp = node.next
+                    node.next = node.next.next # 마지막 노드도 가능
+                    del temp
+                    return
+                else:
+                    node = node.next
+
 linkedlist1 = NodeMgmt(0)
 linkedlist1.desc()
 
 for data in range(1,11):
     linkedlist1.add(data)
+linkedlist1.desc()
+
+print("3 삭제")
+
+linkedlist1.delete(3)
+linkedlist1.desc()
+
+print("0 삭제")
+
+linkedlist1.delete(0)
+linkedlist1.desc()
+
+print("10 삭제")
+
+linkedlist1.delete(10)
 linkedlist1.desc()
